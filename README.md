@@ -116,7 +116,8 @@ Store owners can monitor their stores, average ratings and customer feedback.
 
 Administrators can view platform-wide statistics and manage users and stores.
 
-![Admin Dashboard](./screenshots/admin-dashboard.png)
+<img width="1832" height="636" alt="image" src="https://github.com/user-attachments/assets/ba261561-6fae-44d7-8109-9a60597e4d45" />
+
 
 ---
 # 🏗️ System Architecture
