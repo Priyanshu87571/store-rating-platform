@@ -112,7 +112,8 @@ Users can submit a rating between **1 and 5 stars** and modify their existing ra
 
 Store owners can monitor their stores, average ratings and customer feedback.
 
-![Store Owner Dashboard](./screenshots/store-owner-dashboard.png)
+<img width="1851" height="848" alt="image" src="https://github.com/user-attachments/assets/3c2040c4-d3cf-42ea-9ac4-154e5dd8cdf1" />
+
 
 ---
 
