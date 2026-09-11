@@ -103,7 +103,8 @@ Normal users can search and browse available stores using store name or address.
 
 Users can submit a rating between **1 and 5 stars** and modify their existing rating.
 
-![Store Rating](./screenshots/store-rating.png)
+<img width="1181" height="221" alt="image" src="https://github.com/user-attachments/assets/9fa9ede7-e0a1-4fbe-949d-2890cb706a5e" />
+
 
 ---
 
