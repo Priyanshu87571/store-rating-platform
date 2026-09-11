@@ -1,0 +1,14 @@
+import { Router } from 'express';
+import * as auth from '../controllers/auth.js';
+import * as admin from '../controllers/admin.js';
+import * as stores from '../controllers/stores.js';
+import * as ratings from '../controllers/ratings.js';
+import * as owner from '../controllers/owner.js';
+import { authenticate,authorize } from '../middleware/auth.js';
+const r=Router();
+r.post('/auth/signup',auth.signup);r.post('/auth/login',auth.login);r.post('/auth/logout',auth.logout);r.get('/auth/me',authenticate,auth.me);r.put('/auth/password',authenticate,auth.changePassword);
+r.get('/admin/dashboard',authenticate,authorize('ADMIN'),admin.dashboard);r.post('/admin/users',authenticate,authorize('ADMIN'),admin.createUser);r.get('/admin/users',authenticate,authorize('ADMIN'),admin.listUsers);r.get('/admin/users/:id',authenticate,authorize('ADMIN'),admin.getUser);r.post('/admin/stores',authenticate,authorize('ADMIN'),admin.createStore);r.get('/admin/stores',authenticate,authorize('ADMIN'),admin.listStores);
+r.get('/stores',authenticate,authorize('USER'),stores.publicStores);r.post('/ratings',authenticate,authorize('USER'),ratings.upsertRating);
+r.get('/owner/dashboard',authenticate,authorize('STORE_OWNER'),owner.dashboard);
+r.get('/health',(req,res)=>res.json({status:'ok'}));
+export default r;

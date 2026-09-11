@@ -1,0 +1,1 @@
+This project intentionally uses `npx prisma db push` for fast coding-challenge setup. For production, generate versioned Prisma migrations with `npx prisma migrate dev --name init`.

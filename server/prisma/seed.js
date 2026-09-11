@@ -1,0 +1,8 @@
+import 'dotenv/config';import bcrypt from 'bcryptjs';import {PrismaClient} from '@prisma/client';const prisma=new PrismaClient();
+const pw=await bcrypt.hash('Password@123',10);await prisma.rating.deleteMany();await prisma.store.deleteMany();await prisma.user.deleteMany();
+const admin=await prisma.user.create({data:{name:'System Administrator Demo User',email:'admin@example.com',passwordHash:pw,address:'Pune, Maharashtra',role:'ADMIN'}});
+const user=await prisma.user.create({data:{name:'Normal User Demo Account',email:'user@example.com',passwordHash:pw,address:'Pune, Maharashtra',role:'USER'}});
+const owner=await prisma.user.create({data:{name:'Store Owner Demo Account',email:'owner@example.com',passwordHash:pw,address:'Pune, Maharashtra',role:'STORE_OWNER'}});
+const owner2=await prisma.user.create({data:{name:'Second Store Owner Demo Account',email:'owner2@example.com',passwordHash:pw,address:'Mumbai, Maharashtra',role:'STORE_OWNER'}});
+const s1=await prisma.store.create({data:{name:'Tech Mart Super Store',email:'techmart@example.com',address:'Tathawade, Pune, Maharashtra',ownerId:owner.id}});const s2=await prisma.store.create({data:{name:'Daily Needs Market',email:'daily@example.com',address:'Wakad, Pune, Maharashtra',ownerId:owner2.id}});const s3=await prisma.store.create({data:{name:'City Electronics Store',email:'city@example.com',address:'Baner, Pune, Maharashtra',ownerId:owner.id}});
+await prisma.rating.createMany({data:[{userId:user.id,storeId:s1.id,rating:5},{userId:user.id,storeId:s2.id,rating:4}]});console.log('Seed complete');console.log('admin@example.com / Password@123');console.log('user@example.com / Password@123');console.log('owner@example.com / Password@123');await prisma.$disconnect();
