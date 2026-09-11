@@ -76,7 +76,7 @@ The backend follows a RESTful API architecture and uses **Prisma ORM with Postgr
 
 The application provides a secure login interface with role-based authentication.
 
-> Add your GitHub screenshot here if required.
+![Login Page](./screenshots/login.png)
 
 ---
 
@@ -84,7 +84,7 @@ The application provides a secure login interface with role-based authentication
 
 Users can create an account with validated name, email, address and password fields.
 
-> Add your GitHub screenshot here if required.
+![User Registration](./screenshots/signup.png)
 
 ---
 
@@ -92,7 +92,7 @@ Users can create an account with validated name, email, address and password fie
 
 Normal users can search and browse available stores using store name or address.
 
-> Add your GitHub screenshot here if required.
+![Store Listing](./screenshots/store-listing.png)
 
 ---
 
@@ -100,7 +100,7 @@ Normal users can search and browse available stores using store name or address.
 
 Users can submit a rating between **1 and 5 stars** and modify their existing rating.
 
-> Add your GitHub screenshot here if required.
+![Store Rating](./screenshots/store-rating.png)
 
 ---
 
@@ -108,7 +108,7 @@ Users can submit a rating between **1 and 5 stars** and modify their existing ra
 
 Store owners can monitor their stores, average ratings and customer feedback.
 
-> Add your GitHub screenshot here if required.
+![Store Owner Dashboard](./screenshots/store-owner-dashboard.png)
 
 ---
 
@@ -116,10 +116,9 @@ Store owners can monitor their stores, average ratings and customer feedback.
 
 Administrators can view platform-wide statistics and manage users and stores.
 
-> Add your GitHub screenshot here if required.
+![Admin Dashboard](./screenshots/admin-dashboard.png)
 
 ---
-
 # 🏗️ System Architecture
 
 ```text
