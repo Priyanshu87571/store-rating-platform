@@ -85,7 +85,8 @@ The application provides a secure login interface with role-based authentication
 
 Users can create an account with validated name, email, address and password fields.
 
-![User Registration](./screenshots/signup.png)
+<img width="526" height="737" alt="image" src="https://github.com/user-attachments/assets/840d606b-1302-4101-bd8a-e70b73049772" />
+
 
 ---
 
