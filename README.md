@@ -76,7 +76,8 @@ The backend follows a RESTful API architecture and uses **Prisma ORM with Postgr
 
 The application provides a secure login interface with role-based authentication.
 
-![Login Page](./screenshots/login.png)
+<img width="567" height="687" alt="image" src="https://github.com/user-attachments/assets/78915c49-745d-4ff8-8faf-8ace4194ec99" />
+
 
 ---
 
