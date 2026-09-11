@@ -94,7 +94,8 @@ Users can create an account with validated name, email, address and password fie
 
 Normal users can search and browse available stores using store name or address.
 
-![Store Listing](./screenshots/store-listing.png)
+<img width="1850" height="852" alt="image" src="https://github.com/user-attachments/assets/609dac57-549f-4679-b721-a72b177993ee" />
+
 
 ---
 
