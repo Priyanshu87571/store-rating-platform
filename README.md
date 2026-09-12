@@ -1,4 +1,4 @@
-# ⭐ RateHub — Store Rating Platform
+# RateHub — Store Rating Platform
 
 <p align="center">
   A full-stack role-based store rating platform built with React, Express.js, PostgreSQL and Prisma.
